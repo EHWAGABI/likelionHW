@@ -1,0 +1,34 @@
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+
+    <style>
+    h1 {
+        font-family: 'Jua', sans-serif;
+    }
+    body{
+        font-family: 'Jua', sans-serif;
+    }
+    </style>
+
+</head>
+
+<div class="container">
+<br>
+<h1>단어 수를 세어봐요☺</h1>
+
+<body>
+
+    <form action="{%url 'count' %}">
+    <textarea class="form-control" cols="40" rows="10" name="fulltext" placeholder="이곳에 내용을 입력하세요!"></textarea>
+    <br>
+    <input class="btn btn-info" type="submit" value="세어보자!">
+    <hr>
+    </form>
+    <a class="btn btn-success" href="{%url 'about' %}" role="button"> 이 프로그램에 대해 더 알아보기</a>
+    <br>
+    <br>
+    <a class="btn btn-danger" href="{%url 'plus' %}" role="button"> 추가기능 보기</a>
+</body>
+</div>
